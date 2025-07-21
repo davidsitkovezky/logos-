@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube logo</title>
+    <style>
+        html {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212;
+        }
+
+        .redbackground {
+            background-color: red;
+            height: 150px;
+            width: 250px;
+            border-radius: 30px;
+            animation-duration: 2s;
+            animation-name: scalebigger;
+            position: relative;
+        }
+
+        @keyframes scalebigger {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            60% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+
+            80% {
+                transform: scale(0.95);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+
+        .white {
+            position: absolute;
+            left: 100px;
+            top: 50px;
+            border-left: 55px solid white;
+            border-top: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="redbackground">
+        <div class="white"></div>
+    </div>
+</body>
+
+</html>

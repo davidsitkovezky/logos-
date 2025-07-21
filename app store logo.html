@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App Store Logo</title>
+  <style>
+    html, body {
+      background-color: #121212;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .background {
+      background: linear-gradient(rgb(0, 174, 255), rgba(0, 0, 255, 0.943));
+      width: 300px;
+      height: 300px;
+      border-radius: 60px;
+      position: relative;
+      animation-duration: 1s;
+      animation-name: scalebigger;
+    }
+    @keyframes scalebigger {
+      0%{
+        transform:scale(0);
+      }
+
+      100%{
+        transform:scale(1) rotate(360deg);
+        transition:all ease-out;
+      }
+    }
+
+    .h1halfstick1 {
+      background-color: white;
+      height: 150px;
+      width: 20px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      transform: rotate(-30deg);
+      position: absolute;
+      top: 90px;
+      left: 180px;
+    }
+
+    .h1halfstick2 {
+      background-color: white;
+      height: 40px;
+      width: 20px;
+      border-radius: 10px;
+      transform: rotate(-30deg);
+      position: absolute;
+      top: 60px;
+      left: 128px;
+    }
+
+    .h2halfstick1 {
+      background-color: white;
+      height: 20px;
+      width: 130px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 3px;
+      transform: rotate(0deg);
+      position: absolute;
+      top: 170px;
+      left: 53px;
+    }
+
+    .h2halfstick2 {
+      background-color: white;
+      height: 40px;
+      width: 20px;
+      border-radius: 10px;
+      transform: rotate(90deg);
+      position: absolute;
+      top: 160px;
+      left: 200px;
+    }
+
+    .h3halfstick1 {
+      background-color: white;
+      height: 140px;
+      width: 20px;
+      border-radius: 10px;
+      transform: rotate(30deg);
+      position: absolute;
+      top: 53px;
+      left: 115px;
+    }
+
+    .h3halfstick2 {
+      background-color: white;
+      height: 37px;
+      width: 20px;
+      border-radius: 5px 5px 10px 2px;
+      transform: rotate(205deg);
+      position: absolute;
+      top: 193px;
+      left: 70px;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="h1halfstick1"></div>
+    <div class="h1halfstick2"></div>
+    <div class="h2halfstick1"></div>
+    <div class="h2halfstick2"></div>
+    <div class="h3halfstick1"></div>
+    <div class="h3halfstick2"></div>
+  </div>
+</body>
+</html>
